@@ -45,7 +45,7 @@ Assets/
 
 | Repository | Description |
 |-----------|-------------|
-| 🛒 [E-Commerce Backend API](https://github.com/nawabnak-coder/e-commerce-backend-api) | Java-based backend system with Spring Boot & MySQL |
+| 🛒 [E-Commerce Backend API](https://github.com/nawabnak-coder/e-commerce) | Java-based backend system with Spring Boot & MySQL |
 | ⚙️ [nakserver](https://github.com/nawabnak-coder/nakserver) | API backend for testing and automation |
 | 🌐 [portfolio-website](https://github.com/nawabnak-coder/portfolio-website) | Personal portfolio showcasing projects |
 | 🖥️ [portfolio](https://github.com/nawabnak-coder/portfolio) | Classic static portfolio version |
@@ -75,8 +75,8 @@ Or link to specific files directly (for example, image references in your README
 
 **MD Nawab Ali Khan**  
 💼 Java Developer | Backend Engineer | Spring Boot Specialist  
-🌐 [Portfolio](#)  
-🔗 [LinkedIn](#)  
+🌐 [Portfolio](https://nawabnak-coder.github.io/portfolio/index.html)  
+🔗 [LinkedIn](https://www.linkedin.com/in/md-nawab-ali-khan/)  
 📧 nawabnak@gmail.com  
 
 ---
