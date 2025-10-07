@@ -115,7 +115,7 @@ This repository is public but **not licensed for redistribution**.
 You are free to view, reference, and learn, but please **contact the owner** before using materials commercially.
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=4000&pause=500&color=00BFFF&center=true&vCenter=true&width=500&lines=Shared+Assets+for+Projects;Reusable+Design+and+Docs;Maintained+by+Nawab+Ali+Khan" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=4000&pause=500&color=00BFFF&center=true&vCenter=true&width=500&lines=Shared+Assets+for+Projects;Reusable+Design+and+Docs;Maintained+by+Md+Nawab+Ali+Khan" alt="Typing SVG" />
 </p>
 
 ---
