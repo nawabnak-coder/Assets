@@ -1,0 +1,358 @@
+    1  sudo apt update; sudo apt upgrade -y
+    2  sudo apt autoremove
+    3  exit
+    4  reboot
+    5  sudo apt installvlc gimp gparted synaptic
+    6  sudo apt install vlc gimp gparted synaptic
+    7  sudo dpkg -i google-chrome-stable_current_amd64.deb 
+    8  cd
+    9  sudo apt install preload
+   10  sudo apt install timeshift
+   11  sudo apt install ubuntu-restricted-extras 
+   12  sudo apt install gnome-tweak-tool
+   13  sudo apt-get install gnome-browser-connector
+   14  sudo allow ufw
+   15  sudo ufw enable
+   16  sudo apt install bleachbit
+   17  reboot
+   18  sudo apt autoremove 
+   19  sudo apt update
+   20  sudo apt upgarde
+   21  sudo apt upgrade
+   22  shutdown now
+   23  mvn
+   24  sudo apt install maven
+   25  mvn -v
+   26  exit
+   27  ls
+   28  tree
+   29  mvn spring-boot:run
+   30  mvn install
+   31  mvn spring-boot:run
+   32  mvn clean install
+   33  curl -fsSL https://ollama.com/install.sh | sh
+   34  ollama run
+   35  ollama
+   36  ollama serve
+   37  ollama
+   38  /bin/python3 /home/nakhan/projects/src/main.py
+   39  exit
+   40  mpnp install
+   41  pnpm install
+   42  pnpm run dev
+   43  mvn spring-boot:run
+   44  ls
+   45  mvn clean install
+   46  sudo apt install openjdk-17-jdk
+   47  mvn clean install
+   48  java -version
+   49  mvn clean installexport JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64 && mvn clean installcurl -s http://localhost:8080/api/users | python3 -m json.tool
+   50  mvn clean install
+   51  ls
+   52  cd project
+   53  ls
+   54  ./run.sh 
+   55  tree
+   56  nano src/main/resources/application.properties 
+   57  ./run.sh 
+   58  ollama pull llama3.1:8b
+   59  ollama pull qwen2.5-coder:1.5b-baseollama pull qwen2.5-coder:1.5b-base
+   60  ollama pull qwen2.5-coder:1.5b-base
+   61  ollama pull nomic-embed-text:latest
+   62  [200~name: Default Assistant
+   63  version: 1.0.2
+   64  schema: v1
+   65  models:
+   66  context:
+   67  ls
+   68  cd nakorg-ai/
+   69  ollama list
+   70  ollama pull qwen2.5-coder:latest
+   71  ollama list
+   72  ollama run qwen2.5-coder
+   73  /bin/python3 /home/nakhan/vscode/nakorg-AI/project/calculator.py
+   74  npx create-react-app nakorg-ai
+   75  cd nakorg-ai && npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
+   76  ls
+   77  cd nakorg-ai && npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
+   78  cd "/home/nakhan/vscode/nakorg-AI"
+   79  cd nakorg-ai/src && mkdir components pages styles
+   80  cd "/home/nakhan/vscode/nakorg-AI"
+   81  cd nakorg-ai && npm start
+   82  ollama list
+   83  exit
+   84  cd nakorg-ai && npm install react-router-dom
+   85  ls
+   86  npm start
+   87  cd "/home/nakhan/vscode/nakorg-AI"
+   88  cd nakorg-ai && npm start
+   89  cd nakorg-ai && npm install axios
+   90  cd "/home/nakhan/vscode/nakorg-AI"
+   91  cd nakorg-ai && npm start
+   92  ls
+   93  mkdir
+   94  mkdir nakorg
+   95  cd nakorg
+   96  echo "Todo list created"
+   97  mkdir -p backend/src/main/java/com/nakorgai/controller/ backend/src/main/java/com/nakorgai/service/ backend/src/main/java/com/nakorgai/model/ backend/src/main/java/com/nakorgai/repository/ backend/src/main/java/com/nakorgai/config/
+   98  mkdir -p frontend/public/ frontend/src/components/ frontend/src/pages/ frontend/src/styles/
+   99  ls
+  100  ls -al
+  101  npm start
+  102  cd frontend/ && npm start
+  103  cd "/home/nakhan/vscode/nakorg-AI"
+  104  mkdir frontend/
+  105  cd frontend/ && npm start
+  106  cd "/home/nakhan/vscode/nakorg-AI"
+  107  cd frontend/ && npm init -y
+  108  cd "/home/nakhan/vscode/nakorg-AI"
+  109  cd frontend/ && npm install react react-dom react-router-dom
+  110  cd "/home/nakhan/vscode/nakorg-AI"
+  111  cd frontend/ && npm start
+  112  cd "/home/nakhan/vscode/nakorg-AI"
+  113  cd frontend/ && npm install react-scripts --save-dev
+  114  cd "/home/nakhan/vscode/nakorg-AI"
+  115  cd frontend/ && npm install react-scripts --save-dev
+  116  cd "/home/nakhan/vscode/nakorg-AI"
+  117  cd frontend/ && npm start
+  118  cd "/home/nakhan/vscode/nakorg-AI"
+  119  cd frontend/ && npm start
+  120  cd frontend/ && npm start
+  121  cd "/home/nakhan/vscode/nakorg-AI"
+  122  kill -9 $(lsof -t -i:3000)
+  123  cd frontend/ && npm start
+  124  cd "/home/nakhan/vscode/nakorg-AI"
+  125  cd frontend/ && npm start
+  126  kill -9 $(lsof -t -i:3000)
+  127  cd frontend/ && npm start
+  128  cd frontend/ && npm install web-vitals
+  129  cd "/home/nakhan/vscode/nakorg-AI"
+  130  mysql -u root -ppassword -e "CREATE DATABASE IF NOT EXISTS nakorgai; USE nakorgai; CREATE TABLE users ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(100), email VARCHAR(150) UNIQUE NOT NULL, password_hash VARCHAR(255) NOT NULL, plan ENUM('FREE', 'PRO') DEFAULT 'FREE', daily_credits INT DEFAULT 10, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ); CREATE TABLE chats ( id BIGINT AUTO_INCREMENT PRIMARY KEY, user_id BIGINT NOT NULL, model VARCHAR(100) NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE ); CREATE TABLE messages ( id BIGINT AUTO_INCREMENT PRIMARY KEY, chat_id BIGINT NOT NULL, sender ENUM('USER', 'AI') NOT NULL, content TEXT NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (chat_id) REFERENCES chats(id) ON DELETE CASCADE ); CREATE TABLE transactions ( id BIGINT AUTO_INCREMENT PRIMARY KEY, user_id BIGINT NOT NULL, amount DECIMAL(10,2) NOT NULL, currency VARCHAR(10) DEFAULT 'INR', status ENUM('SUCCESS', 'FAILED') DEFAULT 'SUCCESS', created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE );"
+  131  sudo apt install mysql-client-core-8.0
+  132  mysql -u root -ppassword -e "CREATE DATABASE IF NOT EXISTS nakorgai; USE nakorgai; CREATE TABLE users ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(100), email VARCHAR(150) UNIQUE NOT NULL, password_hash VARCHAR(255) NOT NULL, plan ENUM('FREE', 'PRO') DEFAULT 'FREE', daily_credits INT DEFAULT 10, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ); CREATE TABLE chats ( id BIGINT AUTO_INCREMENT PRIMARY KEY, user_id BIGINT NOT NULL, model VARCHAR(100) NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE ); CREATE TABLE messages ( id BIGINT AUTO_INCREMENT PRIMARY KEY, chat_id BIGINT NOT NULL, sender ENUM('USER', 'AI') NOT NULL, content TEXT NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (chat_id) REFERENCES chats(id) ON DELETE CASCADE ); CREATE TABLE transactions ( id BIGINT AUTO_INCREMENT PRIMARY KEY, user_id BIGINT NOT NULL, amount DECIMAL(10,2) NOT NULL, currency VARCHAR(10) DEFAULT 'INR', status ENUM('SUCCESS', 'FAILED') DEFAULT 'SUCCESS', created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE );"
+  133  sudo systemctl start mysql
+  134  sudo mysqld
+  135  sudo apt install mysql-server
+  136  mysql -u root -ppassword -e "CREATE DATABASE IF NOT EXISTS nakorgai; USE nakorgai; CREATE TABLE users ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(100), email VARCHAR(150) UNIQUE NOT NULL, password_hash VARCHAR(255) NOT NULL, plan ENUM('FREE', 'PRO') DEFAULT 'FREE', daily_credits INT DEFAULT 10, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ); CREATE TABLE chats ( id BIGINT AUTO_INCREMENT PRIMARY KEY, user_id BIGINT NOT NULL, model VARCHAR(100) NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE ); CREATE TABLE messages ( id BIGINT AUTO_INCREMENT PRIMARY KEY, chat_id BIGINT NOT NULL, sender ENUM('USER', 'AI') NOT NULL, content TEXT NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (chat_id) REFERENCES chats(id) ON DELETE CASCADE ); CREATE TABLE transactions ( id BIGINT AUTO_INCREMENT PRIMARY KEY, user_id BIGINT NOT NULL, amount DECIMAL(10,2) NOT NULL, currency VARCHAR(10) DEFAULT 'INR', status ENUM('SUCCESS', 'FAILED') DEFAULT 'SUCCESS', created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE );"
+  137  mysql -u root -e "CREATE DATABASE IF NOT EXISTS nakorgai; USE nakorgai; CREATE TABLE users ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(100), email VARCHAR(150) UNIQUE NOT NULL, password_hash VARCHAR(255) NOT NULL, plan ENUM('FREE', 'PRO') DEFAULT 'FREE', daily_credits INT DEFAULT 10, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ); CREATE TABLE chats ( id BIGINT AUTO_INCREMENT PRIMARY KEY, user_id BIGINT NOT NULL, model VARCHAR(100) NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE ); CREATE TABLE messages ( id BIGINT AUTO_INCREMENT PRIMARY KEY, chat_id BIGINT NOT NULL, sender ENUM('USER', 'AI') NOT NULL, content TEXT NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (chat_id) REFERENCES chats(id) ON DELETE CASCADE ); CREATE TABLE transactions ( id BIGINT AUTO_INCREMENT PRIMARY KEY, user_id BIGINT NOT NULL, amount DECIMAL(10,2) NOT NULL, currency VARCHAR(10) DEFAULT 'INR', status ENUM('SUCCESS', 'FAILED') DEFAULT 'SUCCESS', created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE );"
+  138  mysql_secure_installation
+  139  sudo systemctl stop mysql
+  140  sudo mysqld_safe --skip-grant-tables &
+  141  sudo mkdir -p /var/run/mysqld
+  142  sudo mysqld_safe --skip-grant-tables &
+  143  sudo apt update && sudo apt install -y mysql-server
+  144  sudo systemctl start mysql
+  145  sudo mysql_secure_installation
+  146  mysql -u root -p
+  147  sudo mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
+  148  sudo mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'linux1998'; FLUSH PRIVILEGES;"
+  149  sudo mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
+  150  sudo mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'linux1998'; FLUSH PRIVILEGES;"
+  151  sudo mysql_secure_installation
+  152  sudo mysql -u root
+  153  sudo mysqld_safe --skip-grant-tables &
+  154  sudo apt-get remove --purge mysql*
+  155  sudo apt-get install mysql-server
+  156  sudo mysql_secure_installation
+  157  sudo mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED BY 'Linux@1998'; FLUSH PRIVILEGES;
+  158  sudo mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED BY 'Linux@1998'; FLUSH PRIVILEGES;
+  159  sudo mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED BY 'Linux\@1998'; FLUSH PRIVILEGES; exit"
+  160  mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED BY 'Linux\@1998'; FLUSH PRIVILEGES; exit"
+  161  sudo mysql -u root
+  162  sudo mysql_secure_installation
+  163  sudo mysql -u root -e "FLUSH PRIVILEGES;"
+  164  sudo apt-get --purge remove mysql* -y
+  165  sudo apt update && sudo apt upgrade -y
+  166  sudo apt install mysql-server -y
+  167  sudo systemctl status mysql
+  168  sudo systemctl start mysql
+  169  sudo systemctl enable mysql
+  170  sudo mysql_secure_installation
+  171  sudo mysql
+  172  sudo systemctl stop mysql
+  173  sudo mysqld_safe --skip-grant-tables &
+  174  sudo mkdir -p /var/run/mysqld
+  175  sudo chown mysql:mysql /var/run/mysqld
+  176  sudo mysqld_safe --skip-grant-tables &
+  177  FLUSH PRIVILEGES;
+  178  sudo mysql
+  179  sudo systemctl start mysql
+  180  sudo systemctl status mysql
+  181  sudo systemctl start mysql
+  182  sudo systemctl status mysql
+  183  sudo systemctl start mysql
+  184  sudo systemctl stop mysql
+  185  sudo systemctl start mysql
+  186  sudo systemctl stop mysql
+  187  sudo pkill -9 mysqld
+  188  sudo rm -rf /var/lib/mysql/mysql.sock.lock
+  189  sudo rm -rf /var/run/mysqld/mysqld.sock
+  190  sudo rm -rf /var/run/mysqld/mysqld.pid
+  191  sudo mkdir -p /var/run/mysqld
+  192  sudo chown mysql:mysql /var/run/mysqld
+  193  sudo systemctl start mysql
+  194  sudo systemctl status mysql
+  195  mysql -u root -p
+  196  sudo apt update
+  197  sudo apt install bluez blueman -y
+  198  sudo systemctl start bluetooth
+  199  sudo systemctl enable bluetooth
+  200  systemctl status bluetooth
+  201  bluetoothctl 
+  202  sudo systemctl status bluetooth
+  203  bluetoothctl list
+  204  rfkill list bluetooth
+  205  sudo rfkill unblock bluetooth
+  206  rfkill list bluetooth
+  207  bluetoothctl 
+  208  bluetoothctl devices
+  209  hcitool scan
+  210  bluetoothctl
+  211  hcitool scan 
+  212  bluetoothctl list
+  213  sudo rfkill unblock bluetooth
+  214  sudo systemctl restart bluetooth
+  215  sudo modprobe btusb
+  216  sudo rfkill unblock bluetooth
+  217  sudo systemctl restart bluetooth
+  218  sudo modprobe btusb
+  219  sudo nano /etc/bluetooth/main.conf
+  220  sudo systemctl restart bluetooth
+  221  bluetoothctl
+  222  sudo apt-get --purge remove timeshift
+  223  mvn archetype:generate -DgroupId=com.nakorgai -DartifactId=backend -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+  224  npx create-react-app frontend
+  225  mvn install -f backend/pom.xml
+  226  tree
+  227  npm install react-router-dom
+  228  mvn spring-boot:run -f backend/pom.xml
+  229  mvn clean install -f backend/pom.xml
+  230  mvn spring-boot:run -f backend/pom.xml
+  231  cd frontend && npm start
+  232  cd frontend && rm -rf node_modules && npm install
+  233  cd "/home/nakhan/github/nakorg-AI"
+  234  cd frontend && npm install react-scripts@latest
+  235  cd "/home/nakhan/github/nakorg-AI"
+  236  cd frontend && npm start
+  237  npm start
+  238  cd "/home/nakhan/github/nakorg-AI"
+  239  kill $(jobs -p)
+  240  ps aux | grep node
+  241  kill 32789
+  242  cd frontend && npm start
+  243  r
+  244  cd frontend && rm -rf node_modules && npm install
+  245  kill $(jobs -p)
+  246  ps aux | grep node
+  247  kill 40144
+  248  cd frontend && npm start
+  249  cd "/home/nakhan/github/nakorg-AI"
+  250  cd frontend && npm start
+  251  cd "/home/nakhan/github/nakorg-AI"
+  252  cd frontend && ./node_modules/.bin/react-scripts start
+  253  ./node_modules/.bin/react-scripts start
+  254  cd "/home/nakhan/github/nakorg-AI"
+  255  cd frontend && chmod +x ./node_modules/.bin/react-scripts
+  256  cd ..
+  257  cd frontend && npm start
+  258  cd frontend && npm start
+  259  cd "/home/nakhan/github/nakorg-AI"
+  260  cd frontend && npm run start
+  261  cd "/home/nakhan/github/nakorg-AI"
+  262  cd frontend && npm start
+  263  cd "/home/nakhan/github/nakorg-AI"
+  264  cd frontend && npm install
+  265  cd "/home/nakhan/github/nakorg-AI"
+  266  cd frontend && npm start
+  267  cd frontend && npm install react-router-dom@6.3.0
+  268  cd "/home/nakhan/github/nakorg-AI"
+  269  cd frontend && npm install @testing-library/react@latest
+  270  cd "/home/nakhan/github/nakorg-AI"
+  271  cd frontend && npm install react@18.2.0 react-dom@18.2.0
+  272  cd "/home/nakhan/github/nakorg-AI"
+  273  cd frontend && rm -rf node_modules && npm install
+  274  cd "/home/nakhan/github/nakorg-AI"
+  275  cd frontend && npm run eject
+  276  npm run eject
+  277  cd frontend && npm run eject
+  278  cd "/home/nakhan/github/nakorg-AI"
+  279  cd frontend && npx create-react-app new-app
+  280  cd "/home/nakhan/github/nakorg-AI"
+  281  cd frontend && mv src/* new-app/src && mv public new-app && rm -rf src && mv new-app frontend
+  282  cd "/home/nakhan/github/nakorg-AI"
+  283  cd frontend && mv public/* new-app/public && mv src/* new-app/src && rm -rf src public && mv new-app frontend
+  284  cd "/home/nakhan/github/nakorg-AI"
+  285  cd frontend && mv public/* new-app/public && mv new-app/src/* new-app/src && rm -rf public && rm -rf new-app/src && mv new-app frontend
+  286  cd "/home/nakhan/github/nakorg-AI"
+  287  cd frontend && mv new-app/public/* new-app/public && mv new-app/src/* new-app/src && rm -rf public && rm -rf src && mv new-app frontend
+  288  cd frontend && mv new-app/public/* new-app/public && mv new-app/src/* new-app/src && rm -rf public && rm -rf src && mv new-app frontend
+  289  cd "/home/nakhan/github/nakorg-AI"
+  290  cd frontend && rm -rf src public && mv new-app/* . && rm -rf new-app && mv . frontend
+  291  cd "/home/nakhan/github/nakorg-AI"
+  292  cd frontend && rm -rf src public && shopt -s dotglob && mv new-app/!(node_modules) . && rm -rf new-app
+  293  cd "/home/nakhan/github/nakorg-AI"
+  294  cd frontend && npm start
+  295  cd "/home/nakhan/github/nakorg-AI"
+  296  cd frontend && npm start
+  297  ls
+  298  cd "/home/nakhan/github/nakorg-AI"
+  299  cd frontend && rm -rf node_modules && npm install
+  300  cd "/home/nakhan/github/nakorg-AI"
+  301  cd frontend && npm start
+  302  cd "/home/nakhan/github/nakorg-AI"
+  303  cd frontend && npx create-react-app new-app && cd new-app && npm start
+  304  cd frontend && rm -rf src/* && mv ../src/* src
+  305  cd "/home/nakhan/github/nakorg-AI"
+  306  cd frontend && rm -rf src/* && mv ../frontend/src/* src
+  307  cd "/home/nakhan/github/nakorg-AI"
+  308  rm -rf frontend/src/* && mv ../frontend/src/* frontend/src
+  309  rm -rf frontend/src/* && mv /home/nakhan/github/nakorg-AI/frontend/src/* frontend/src
+  310  cp -r frontend/new-app/src/* frontend/src
+  311  mkdir frontend/src && cp -r frontend/new-app/src/* frontend/src
+  312  cd frontend && npm start
+  313  npm start
+  314  cd backend && mvn clean install
+  315  ls
+  316  mvn clean install
+  317  cd frontend && npm install react-router-dom
+  318  cd "/home/nakhan/github/nakorg-AI"
+  319  cd frontend && npm install axios
+  320  cd frontend && npm install axios
+  321  npm install axios
+  322  npm run
+  323  npm start
+  324  ls
+  325  ls new-app/
+  326  mkdir -p nakorg-ai/backend nakorg-ai/docs
+  327  tree
+  328  ls
+  329  cd project
+  330  ls
+  331  nano README.md 
+  332  ls -al ~/.ssh/
+  333  ssh-keygen -t ed25519 -C "nawabnak@gmail.com"
+  334  eval "$(ssh-agent -s)"
+  335  ssh-add ~/.ssh/id_ed25519
+  336  cat ~/.ssh/id_ed25519.pub
+  337  ls
+  338  mkdir GITHUB
+  339  cd GITHUB/
+  340  git clone git@github.com:nawabnak-coder/JavaWebApplication.git
+  341  ls
+  342  cd JavaWebApplication/
+  343  ls
+  344  ls -al
+  345  ls
+  346  tree
+  347  ./START.sh 
+  348  ls
+  349  ./run.sh 
+  350  ssh -T git@github.com
+  351  git add .
+  352  git commit -m "All file added"
+  353  git config --global user.name "nawabnak-coder"
+  354  git add .
+  355  git commit -m "All file added"
+  356  git push -u origin main
+  357  exit
+  358  history > history.txt
