@@ -56,18 +56,46 @@ Assets/
 
 ## 🧠 How to Use
 
-You can clone or reference this repository in your projects:
+You can use this repository in two ways: **clone the repo** or **link to specific files directly**.
+
+### 1️⃣ Clone the Repository
+
+Clone the entire Assets repository to your local machine:
 
 ```bash
-# Clone repository
 git clone https://github.com/nawabnak-coder/Assets.git
 ```
 
-Or link to specific files directly (for example, image references in your README or web apps):
+This gives you access to all files and folders locally.
+
+### 2️⃣ Link to Specific Files Directly
+
+Instead of cloning, you can reference specific files directly in your project or README. This is useful for images, docs, or configuration files.
+
+#### Example: Image in a README or Web App
 
 ```markdown
 ![Logo](https://raw.githubusercontent.com/nawabnak-coder/Assets/main/images/logos/logo.png)
 ```
+
+Or in HTML:
+
+```html
+<img src="https://raw.githubusercontent.com/nawabnak-coder/Assets/main/images/logos/logo.png" alt="Logo" />
+```
+
+#### Example: Documentation or Config File
+
+```markdown
+[Download Config](https://raw.githubusercontent.com/nawabnak-coder/Assets/main/configs/config.json)
+```
+
+This way, your projects always use the latest version without duplicating files.
+
+### ✅ Tip
+
+- Always use the **`main` branch** URL to ensure your links point to the latest version.  
+- Update links if you move files to a different folder within this repository.
 
 ---
 
